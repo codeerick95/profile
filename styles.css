@@ -1,0 +1,85 @@
+body {
+	background-color: #fff;
+}
+
+.card-title {
+	font-size: 1.5em;
+}
+
+.price .small-text {
+	font-size: .7em;
+}
+
+.price .card-title {
+	font-size: 1.5em;
+}
+
+.table {
+	font-size: .8em;
+	line-height: .8em;
+}
+
+/* Esta clase ya existe */
+.small-text {
+	font-size: .9em;
+}
+
+
+/* Nuevas clases */
+
+/* Modifica bordes */
+.card,
+.border-left,
+.border-right {
+	border: 1px solid #f2f2f2 !important;
+}
+
+.card.border-0 {
+	border: none !important;
+}
+
+.icons>.icon img {
+	width: 30px;
+}
+
+/* Image zoom */
+
+.image-zoom-available {
+	cursor: zoom-in;
+}
+
+.image-zoom-available.is-active {
+	cursor: none;
+}
+
+.product-thumb img{
+	width: 70px;
+	height: 70px;
+}
+
+.product-title {
+	font-size: 1em;
+}
+
+.small-text {
+	font-size: .9em;
+}
+
+/* Quita el borde azul al hacer click que viene con boostrap */
+.form-control {
+	box-shadow: none !important;
+}
+
+.mr-8 {
+	margin-right: 8rem;
+}
+
+.btn-to-buy {
+	width: 10rem;
+}
+
+@media screen and (max-width: 520px){
+	.mr-8 {
+		margin-right: 2rem;
+	}
+}

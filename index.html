@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link active mb-3 d-flex" id="v-pills-info-tab" data-toggle="pill" href="#v-pills-info" role="tab" aria-controls="v-pills-info" aria-selected="true">
+                <span class="icon mr-3">
+                  <i class="fas fa-user"></i>
+                </span>
+                My información
+              </a>
+              <a class="nav-link mb-3 d-flex" id="v-pills-orders-tab" data-toggle="pill" href="#v-pills-orders" role="tab" aria-controls="v-pills-orders" aria-selected="false">
+                <span class="icon mr-3">
+                  <i class="fas fa-shopping-basket"></i>
+                </span>
+                Mis pedidos
+              </a>
+              <a class="nav-link mb-3 d-flex" id="v-pills-history-tab" data-toggle="pill" href="#v-pills-history" role="tab" aria-controls="v-pills-history" aria-selected="false">
+                <span class="icon mr-3">
+                  <i class="fas fa-history"></i>
+                </span>
+                Mi historial
+              </a>
+              <a class="nav-link d-flex" id="v-pills-tracing-tab" data-toggle="pill" href="#v-pills-tracing" role="tab" aria-controls="v-pills-tracing" aria-selected="false">
+                <span class="icon mr-3">
+                  <i class="fas fa-map-marked"></i>
+                </span>
+                Seguimiento de mi pedido
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="tab-content" id="v-pills-tabContent">
+          <!-- Información de cliente -->
+          <div class="tab-pane fade show active" id="v-pills-info" role="tabpanel" aria-labelledby="v-pills-info-tab">
+            <div class="card p-3">
+              <h2 class="text-center card-title">Información de cliente</h2>
+              <div class="card-body d-flex justify-content-center">
+                <form action="" class="w-75">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nombres">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Apellidos">
+                  </div>
+                  <div class="form-group">
+                    <input type="number" class="form-control" placeholder="RUT">
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-group">
+                        <label for="date">Género</label>
+                        <select class="form-control" name="">
+                          <option value="">Varón</option>
+                          <option value="">Mujer</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-group">
+                        <label for="date">Fecha de nacimiento</label>
+                        <input id="date" type="date" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="number" class="form-control" placeholder="Teléfono">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Dirección">
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-group">
+                        <label for="date">Provincia</label>
+                        <select class="form-control" name="">
+                          <option value="">Provincia 1</option>
+                          <option value="">Provincia 2</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-group">
+                        <label for="date">Comuna</label>
+                        <select class="form-control" name="">
+                          <option value="">Comuna 1</option>
+                          <option value="">Comuna 2</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" class="btn btn-block btn-primary" value="Guardar datos">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Pedidos -->
+          <div class="tab-pane fade" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab">
+            <!-- Table -->
+            <div class="table-responsive">
+              <table class="table mb-0">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Producto</th>
+                    <th class="text-center">Estado</th>
+                    <th class="text-center"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Aquí empieza el loop -->
+                  <tr>
+                    <td>
+                      <span class="badge badge-light p-2 mt-4 small-text">123457</span>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-start align-items-center">
+                        <a class="product-thumb mr-2" href="/detail/yoky-pinon-toyota-y-ford-kq-06/4556">
+                          <img src="http://www.takora.cl/autos/repuestos/images/takora/repuestos/T150-0816/T150-0816-e-min.png?fbclid=IwAR0kvGaWXQeNqXo_X7S3NhxPkNxI5AkSZZ7UtwnAdoMWWXF1qDpU3EjXNZA" alt="YOKY PINON TOYOTA Y FORD KQ-06">
+                        </a>
+                        <div class="product-info">
+                          <h4 class="product-title">
+                            <a href="/detail/yoky-pinon-toyota-y-ford-kq-06/4556">
+                              JUEGO DE PASTILLAS DE FRENO A.B.S. EJE TRASERO 37136
+                            </a>
+                          </h4>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <span class="badge badge-primary p-2 mt-4 small-text">Despachado</span>
+                    </td>
+                    <td class="text-center">
+                      <button class="btn btn-sm btn-info mt-4" data-toggle="modal" data-target="#productModal1">Ver detalles</button>
+                    </td>
+                  </tr>
+                  <!-- Modal -->
+                  <div class="modal fade" id="productModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title small-text" id="exampleModalCenterTitle">Número de pedido</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body bg-light d-flex flex-column justify-content-center">
+                          <img src="http://www.takora.cl/autos/repuestos/images/takora/repuestos/T150-0816/T150-0816-e-min.png?fbclid=IwAR0kvGaWXQeNqXo_X7S3NhxPkNxI5AkSZZ7UtwnAdoMWWXF1qDpU3EjXNZA" alt="Producto" class="align-self-center">
+                          <p class="small-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quis, consequuntur corrupti iste! Distinctio quas at, inventore. Veniam, quo veritatis pariatur dolorem adipisci beatae unde, quos dignissimos tempore in
+                            explicabo?
+                          </p>
+                          <ul class="list-group">
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <span class="text-muted mr-4">Nombre:</span>
+                                </div>
+                                <div class="col-md-9">
+                                  <span class="small-text">JUEGO DE PASTILLAS DE FRENO A.B.S. EJE TRASERO 37136</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <span class="text-muted mr-5">Estado:</span>
+                                </div>
+                                <div class="col-md-9">
+                                  <span class="badge badge-primary">Entregado</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <span class="text-muted mr-5">Precio:</span>
+                                </div>
+                                <div class="col-md-9">
+                                  <span>$ 150.00000</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <span class="text-muted mr-5">Descuento:</span>
+                                </div>
+                                <div class="col-md-9">
+                                  <span>$ 50.00</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <span class="text-muted mr-5">Total a pagar:</span>
+                                </div>
+                                <div class="col-md-9">
+                                  <span>$ 100.000</span>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End modal -->
+                  <!-- Aquí termina el loop -->
+                  <!-- Aquí empieza el loop -->
+                  <tr>
+                    <td>
+                      <span class="badge badge-light p-2 mt-4 small-text">123457</span>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-start align-items-center">
+                        <a class="product-thumb mr-2" href="/detail/yoky-pinon-toyota-y-ford-kq-06/4556">
+                          <img src="https://dojiw2m9tvv09.cloudfront.net/13583/product/T_41yu30qh1ll-_sy355_1288.jpg?341&fbclid=IwAR1zK_mC98b50NKf3RwLJyJz37t-rcD6lKHd13qutaJ3Akk4xMdlKNAlCpY" alt="YOKY PINON TOYOTA Y FORD KQ-06">
+                        </a>
+                        <div class="product-info">
+                          <h4 class="product-title">
+                            <a href="/detail/yoky-pinon-toyota-y-ford-kq-06/4556">
+                              Laptop Asus ROG G703GI-WS91K
+                            </a>
+                          </h4>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <span class="badge badge-warning text-white p-2 mt-4 small-text">En proceso</span>
+                    </td>
+                    <td class="text-center">
+                      <button class="btn btn-sm btn-info mt-4" data-toggle="modal" data-target="#productModal2">Ver detalles</button>
+                    </td>
+                  </tr>
+                  <!-- Modal -->
+                  <div class="modal fade" id="productModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title small-text" id="exampleModalCenterTitle">Número de pedido</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body bg-light d-flex flex-column justify-content-center">
+                          <img src="https://dojiw2m9tvv09.cloudfront.net/13583/product/T_41yu30qh1ll-_sy355_1288.jpg?341&fbclid=IwAR1zK_mC98b50NKf3RwLJyJz37t-rcD6lKHd13qutaJ3Akk4xMdlKNAlCpY" alt="Producto" class="align-self-center">
+                          <p class="small-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quis, consequuntur corrupti iste! Distinctio quas at, inventore. Veniam, quo veritatis pariatur dolorem adipisci beatae unde, quos dignissimos tempore in
+                            explicabo?
+                          </p>
+                          <ul class="list-group">
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <span class="text-muted mr-4">Nombre:</span>
+                                </div>
+                                <div class="col-md-9">
+                                  <span class="small-text">Laptop Asus ROG G703GI-WS91K</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <span class="text-muted mr-5">Estado:</span>
+                                </div>
+                                <div class="col-md-9">
+                                  <span class="badge badge-primary">Entregado</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <span class="text-muted mr-5">Precio:</span>
+                                </div>
+                                <div class="col-md-9">
+                                  <span>$ 150.00000</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <span class="text-muted mr-5">Descuento:</span>
+                                </div>
+                                <div class="col-md-9">
+                                  <span>$ 50.00</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <span class="text-muted mr-5">Total a pagar:</span>
+                                </div>
+                                <div class="col-md-9">
+                                  <span>$ 100.000</span>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End modal -->
+                  <!-- Aquí termina el loop -->
+                  <!-- Aquí empieza el loop -->
+                  <tr>
+                    <td>
+                      <span class="badge badge-light p-2 mt-4 small-text">123457</span>
+                    </td>
+                    <td>
+                      <div class="d-flex justify-content-start align-items-center">
+                        <a class="product-thumb mr-2" href="/detail/yoky-pinon-toyota-y-ford-kq-06/4556">
+                          <img src="https://static.mercadoshops.com/5m-manguera-hidrolavadora-motor-life-repuesto_iZ1065328582XvZsmallXpZ1XfZ207572862-470838157-1XsZ207572862xIM.jpg" alt="YOKY PINON TOYOTA Y FORD KQ-06">
+                        </a>
+                        <div class="product-info">
+                          <h4 class="product-title">
+                            <a href="/detail/yoky-pinon-toyota-y-ford-kq-06/4556">
+                              Producto 3
+                            </a>
+                          </h4>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <span class="badge badge-primary p-2 mt-4 small-text">Despachado</span>
+                    </td>
+                    <td class="text-center">
+                      <button class="btn btn-sm btn-info mt-4" data-toggle="modal" data-target="#productModal3">Ver detalles</button>
+                    </td>
+                  </tr>
+                  <!-- Modal -->
+                  <div class="modal fade" id="productModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title small-text" id="exampleModalCenterTitle">Número de pedido</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body bg-light d-flex flex-column justify-content-center">
+                          <img src="https://static.mercadoshops.com/5m-manguera-hidrolavadora-motor-life-repuesto_iZ1065328582XvZsmallXpZ1XfZ207572862-470838157-1XsZ207572862xIM.jpg" alt="Producto" class="align-self-center">
+                          <p class="small-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quis, consequuntur corrupti iste! Distinctio quas at, inventore. Veniam, quo veritatis pariatur dolorem adipisci beatae unde, quos dignissimos tempore in
+                            explicabo?
+                          </p>
+                          <ul class="list-group">
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <span class="text-muted mr-4">Nombre:</span>
+                                </div>
+                                <div class="col-md-9">
+                                  <span class="small-text">Producto 3</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <span class="text-muted mr-5">Estado:</span>
+                                </div>
+                                <div class="col-md-9">
+                                  <span class="badge badge-primary">Entregado</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <span class="text-muted mr-5">Precio:</span>
+                                </div>
+                                <div class="col-md-9">
+                                  <span>$ 150.00000</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <span class="text-muted mr-5">Descuento:</span>
+                                </div>
+                                <div class="col-md-9">
+                                  <span>$ 50.00</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <span class="text-muted mr-5">Total a pagar:</span>
+                                </div>
+                                <div class="col-md-9">
+                                  <span>$ 100.000</span>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End modal -->
+                  <!-- Aquí termina el loop -->
+                </tbody>
+              </table>
+            </div>
+            <!-- End table -->
+          </div>
+          <!-- Historial -->
+          <div class="tab-pane fade" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab">History</div>
+          <!-- Seguimiento -->
+          <div class="tab-pane fade" id="v-pills-tracing" role="tabpanel" aria-labelledby="v-pills-tracing-tab">
+            <div class="card">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
+                <h2 class="card-title text-center">Seguimiento de pedido</h2>
+                <div class="alert alert-light bg-light">
+                  <p class="mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aliquam rerum debitis neque optio ipsam commodi provident quia inventore dicta ullam possimus architecto quis eius error, expedita, eum soluta deleniti.
+                  </p>
+                </div>
+                <form class="form-inline">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group mx-3 mb-2 w-100">
+                        <input type="number" class="form-control" required placeholder="Número de pedido">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modalSeguimiento">Buscar</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal seguimiento-->
+  <div class="modal fade" id="modalSeguimiento" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title small-text" id="exampleModalCenterTitle">Número de pedido</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body bg-light d-flex flex-column justify-content-center">
+          <img src="http://www.takora.cl/autos/repuestos/images/takora/repuestos/T150-0816/T150-0816-e-min.png?fbclid=IwAR0kvGaWXQeNqXo_X7S3NhxPkNxI5AkSZZ7UtwnAdoMWWXF1qDpU3EjXNZA" alt="Producto" class="align-self-center">
+          <p class="small-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quis, consequuntur corrupti iste! Distinctio quas at, inventore. Veniam, quo veritatis pariatur dolorem adipisci beatae unde, quos dignissimos tempore in explicabo?
+          </p>
+          <p>
+            <span class="text-muted">Nombre:</span>
+            <span class="small-text">JUEGO DE PASTILLAS DE FRENO A.B.S. EJE TRASERO 37136</span>
+          </p>
+          <p>
+            <span class="text-muted">Estado:</span>
+            <span class="badge badge-primary">Entregado</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

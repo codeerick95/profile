@@ -1,0 +1,28 @@
+tabs : mi informacion,
+       mis pedidos,
+       mi historial,
+       seguimiento de mi pedido
+
+en mi informacion :
+	nombre (input)
+	apellidos (input)
+	rut  (input)
+	genero
+	fecha nacimiento
+	telefono  (input)
+	direccion (input)
+	select (provincia)
+	select(comuna)
+
+mis pedidos :
+	tabla pedidos
+	(id pedido,estado(en proceso,despachado,etc),modal para ver el pedido)
+
+mis historial :
+	tabla historial
+     (id detalle_pedido,estado,modal para verlo)
+
+ seguimiento de mi pedido : 
+	input para ingresar un numero y un modal para 	visualizar su estado	
+
+pd : arreglar el boton de salir 
